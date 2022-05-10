@@ -1,0 +1,101 @@
+/* SIDEMENU */
+#menu #sidemenu {
+    background: rgba(0, 0, 0, 0);
+}
+#menu #sidemenu:hover,
+#menu #sidemenu.toggleON {
+    background: rgba(0, 0, 0, 0.2);
+}
+#menu #sidemenu #header-logo-white {
+    visibility: visible;
+    opacity: 1;
+    /* transition: opacity 0.5s 0.2s linear; */
+}
+body.fp-viewing-0 #menu #sidemenu ul {
+    opacity: 0.15;
+    left: 30px;
+    transition: all 0.3s ease-in-out;
+}
+#menu #sidemenu ul {
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+}
+body.fp-viewing-0 #menu #sidemenu:hover ul,
+body.fp-viewing-0 #menu #sidemenu.toggleON ul {
+    opacity: 1;
+    left: 150px;
+}
+/* #menu #sidemenu ul {
+    opacity: 1;
+} */
+#menu #sidemenu ul li a p {
+    color: #fff;
+}
+#menu #sidemenu ul li a span span {
+    /* border-radius: 50%; */
+    /* position: absolute; */
+    z-index: 1;
+    background: #fff;
+    /* transition: all 0.2s ease-in-out; */
+}
+#menu #sidemenu #ig i,
+#menu #sidemenu #ig p,
+#menu #sidemenu ul li a p {
+    color: #fff;
+}
+
+
+/* proyectmenu */
+#menu #proyectmenu {
+    background: rgba(154, 113, 255, 0);
+}
+#menu #proyectmenu:hover {
+    background: rgba(154, 113, 255, 0.05);
+}
+#menu #proyectmenu ul {
+    opacity: 0.7;
+}
+#menu #proyectmenu ul li a {
+    opacity: 1;
+}
+#menu #proyectmenu ul li a p {
+    color: #fff;
+}
+#menu #proyectmenu ul li a:hover p {
+    color: #9a71ff !important;
+}
+#menu #proyectmenu ul li a span span {
+    background: #9a71ff;
+    border-color: #9a71ff;
+}
+
+body.fp-viewing-0 #menu #proyectmenu ul li:nth-child(1) a span span,
+body.fp-viewing-1 #menu #proyectmenu ul li:nth-child(2) a span span,
+body.fp-viewing-2 #menu #proyectmenu ul li:nth-child(3) a span span,
+body.fp-viewing-3 #menu #proyectmenu ul li:nth-child(4) a span span,
+body.fp-viewing-4 #menu #proyectmenu ul li:nth-child(5) a span span,
+body.fp-viewing-5 #menu #proyectmenu ul li:nth-child(6) a span span {
+    width: 10px;
+    height: 10px; 
+    background: rgba(154, 113, 255, 0);
+    border-width: 2px;
+}
+
+#langSwitch .checkLayer {
+    background-color: rgba(154, 113, 255, 0) !important;
+}
+#langSwitch:hover .checkLayer {
+    background-color: rgba(154, 113, 255, 1) !important;
+}
+
+
+body.fp-viewing-6 #menu #proyectmenu,
+body.fp-viewing-7 #menu #proyectmenu,
+body.fp-viewing-8 #menu #proyectmenu,
+body.fp-viewing-6 #langSwitch,
+body.fp-viewing-7 #langSwitch,
+body.fp-viewing-8 #langSwitch {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 0.3s ease-in-out;
+}

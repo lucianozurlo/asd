@@ -1,0 +1,719 @@
+.ip-header .ip-loader svg path.ip-loader-circle {
+    stroke: #5ae0ff;
+}
+body {
+    background: #000;
+}
+.fp-bg {
+    color: #fff;
+}
+.bg-black {
+    background: #000 !important;
+}
+.fp-last {
+    height: 100vh;
+}
+.fp-scroller {
+    height: 100vh;
+}
+#overallContent {
+    opacity: 0;
+}
+body .ip-container.loaded #overallContent {
+    opacity: 1;
+}
+
+#fpProject {
+    z-index: 1;
+}
+#projectVideos,
+#elementsProject {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.elementsCanvas {
+    position: absolute;
+    z-index: 222;
+    top: 50%;
+    right: 50%;
+    width: 177.78vh;
+    height: 56.25vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: revert;
+    transform: translate(50%, -50%);
+}
+
+/* tooltip */
+.elementsCanvas .tooltip {
+    height: auto;
+    width: auto;
+    padding: 0;
+    transition: all 1.2s 0.7s ease-in-out;
+}
+
+.elementsCanvas [class*="element"].tooltip::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    margin: 10px 2px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    width: max-content;
+    max-width: 200px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    pointer-events: none;
+    bottom: 80%;
+    left: -12px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+}
+.elementsCanvas [class*="element"].tooltip:hover::before {
+    opacity: 1;
+    bottom: 100%;
+}
+/***/
+
+/* button-plus */
+.button-plus {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-table;
+    position: relative;
+    text-align: center;
+    color: #e6e6e6;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 0.2s ease-in;
+    animation: pulsate-fwd 6s ease-in-out infinite both;
+    animation-play-state: paused;
+}
+@keyframes pulsate-fwd {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.75);
+        box-shadow: 0 0 5px 0 rgba(90, 224, 255, 1);
+    }
+    20% {
+        opacity: 0.5;
+        transform: scale(0.75);
+        box-shadow: 0 0 5px 0 rgba(90, 224, 255, 1);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 10px 0 rgba(90, 224, 255, 1);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(0.75);
+        box-shadow: 0 0 5px 0 rgba(90, 224, 255, 1);
+    }
+}
+
+.button-plus:hover {
+    color: #fff !important;
+    box-shadow: 0 0 30px 0 rgba(230, 230, 230, 0.5);
+    transition: all 0.2s ease-out;
+    transform: scale(0.8);
+    /* cursor: pointer; */
+    animation-play-state: paused !important;
+    opacity: 1 !important;
+    transition: opacity 1s ease-in-out;
+}
+.button-plus:hover::before {
+    animation: shine 0.5s 0s linear;
+}
+.button-plus:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in;
+}
+.button-plus:before {
+    display: block;
+    width: 0;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 15px 3px #fff;
+    transform: skewX(-20deg);
+}
+.button-plus i {
+    font-size: 12px;
+    padding: 6px 6.75px;
+    transition: all 0.2s ease-in;
+}
+.button-plus:hover i {
+    transform: scale(0.1);
+}
+
+body#fliebenProject .button-plus {
+    color: #5ae0ff;
+}
+body#fliebenProject .button-plus:hover {
+    box-shadow: 0 0 30px 0 rgba(90, 224, 255, 0.5);
+    background-color: #5ae0ff;
+}
+
+@keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+/**/
+#projectVideos video {
+    top: 50%;
+    right: 50%;
+    width: 177.78vh;
+    height: 56.25vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: revert;
+    background: #000;
+    transform: translate(50%, -50%);
+}
+body.fp-viewing-0 #projectVideos video {
+    right: 0%;
+    transform: translate(0%, -50%);
+    transition: right .75s, transform 1s;
+    transition-delay: 0s;
+}
+body.fp-viewing-1 #projectVideos video {
+    transition: right 0.6s, transform 0.6s;
+    transition-delay: 1.5s;
+}
+#fpProject {
+    opacity: 0;
+}
+body.fp-viewing-4 #projectVideos {
+    opacity: 1;
+    transition-delay: 0s !important;
+}
+
+body.fp-viewing-6 #fpProject,
+body.fp-viewing-7 #fpProject,
+body.fp-viewing-8 #fpProject,
+body.fp-viewing-9 #fpProject,
+body.fp-viewing-10 #fpProject,
+body.fp-viewing-11 #fpProject {
+    opacity: 1;
+}
+body.fp-viewing-6 #projectVideos,
+body.fp-viewing-7 #projectVideos,
+body.fp-viewing-8 #projectVideos,
+body.fp-viewing-9 #projectVideos,
+body.fp-viewing-10 #projectVideos,
+body.fp-viewing-11 #projectVideos {
+    opacity: 0;
+}
+
+/*
+body.fp-viewing-5 #fpProject {
+    opacity: 1;
+    transition: 0s !important;
+    transition-delay: 1.4s !important;
+}
+
+body.fp-viewing-5 #projectVideos,
+body.fp-viewing-6 #fpProject {
+    opacity: 1;
+    transition: 0s !important;
+    transition-delay: 0s !important;
+} 
+*/
+
+
+#fpProject video {
+    top: 50%;
+    right: 50%;
+    width: 177.78vh;
+    height: 56.25vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: revert;
+    background: #000;
+    transform: translate(50%, -50%);
+    transition: right 0.6s, transform 0.6s;
+    transition-delay: 1.5s;
+}
+/* body.fp-viewing-5 #fpProject {
+    transition-delay: 0.7s;
+    transition: .2s;
+}
+
+body.fp-viewing-5 #projectVideos {
+transition-delay: 2.9s;
+transition: .2s;
+} */
+
+
+/* 
+#fpProject #section5 video,
+body.fp-viewing-6 #fpProject #section5 video {
+    opacity: 1;
+    transition: .7s;
+    transition-delay: 2.5s;
+} */
+#fpProject #section6 video {
+    left: -47vw;
+    top: 62vh;
+    min-height: 124vh;
+}
+
+#fliebenLoopHot,
+#fliebenLoopHotRev,
+#fliebenLoopCold,
+#fliebenLoopColdRev {
+    opacity: 0;
+}
+
+#introProject {
+    position: absolute;
+    margin: 0 auto;
+    width: 100vw;
+    bottom: 10vh;
+    opacity: 1;
+    z-index: 1;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 1.2s ease-in-out;
+    transform: scale(0.9);
+}
+#introProject img {
+    width: 25vw;
+    filter: grayscale(0) blur(0px);
+    transition: .5s;
+}
+#introProject p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 35px 0;
+}
+
+body.fp-viewing-0 .loaded #introProject {
+    opacity: 1;
+    filter: blur(0);
+    z-index: 1;
+    transform: scale(1);
+    transition: all 1.2s 0.5s ease-in-out;
+}
+body.fp-viewing-1 .loaded #introProject {
+    opacity: 0;
+    filter: blur(50px);
+    transition: all 0.75s ease-in-out;
+    transform: scale(0.85);
+    bottom: 15vh;
+}
+#logoProject {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10000;
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.2s ease-in-out;
+}
+#logoProject img {
+    height: 20px;
+}
+body.fp-viewing-0 #logoProject {
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.5s 0.75s ease-in-out;
+    z-index: 1;
+    transform: scale(1.2);
+}
+#mouse {
+    position: absolute;
+    bottom: -60px;
+    width: calc(100% - 600px);
+    left: 300px;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s 1.1s ease-in-out;
+    z-index: 99999;
+}
+body .loaded #mouse {
+    bottom: 30px;
+    opacity: 0.25;
+    filter: blur(0);
+    transition-delay: 0s;
+}
+body.fp-viewing-0 .loaded #mouse {
+    transition-delay: 1.5s;
+}
+#mouse img {
+    width: 28px;
+}
+#elementsProject .elementsCanvas {
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+.elementsCanvas p {
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+}
+.elementsCanvas #elementsSection1,
+.elementsCanvas #elementsSection2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.elementsCanvas [class*="element"] {
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 1s ease-in-out;
+}
+body.fp-viewing-1 .elementsCanvas #elementsSection1 [class*="element"],
+body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-3 .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-4 .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-3 .elementsCanvas #elementsSection3 [class*="element"],
+body.fp-viewing-4 .elementsCanvas #elementsSection4 [class*="element"],
+body.fp-viewing-5 .elementsCanvas #elementsSection5 [class*="element"],
+body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.2s .7s ease-in-out;
+}
+
+body.fp-viewing-1 .elementsCanvas #elementsSection2,
+body.fp-viewing-5 .elementsCanvas #elementsSection2 {
+    opacity: 0;
+    filter: blur(25px);
+    transition-delay: 0s;
+    transition: all .5s ease-in-out;
+}
+body.fp-viewing-0 .elementsCanvas #elementsSection2,
+body.fp-viewing-6 .elementsCanvas #elementsSection2 {
+    opacity: 0;
+    filter: blur(25px);
+    transition-delay: 0s;
+    transition: all .1s ease-in-out;
+}
+body.fp-viewing-1 .elementsCanvas #elementsSection1 [class*="element"] .button-plus,
+body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"] .button-plus,
+body.fp-viewing-3 .elementsCanvas #elementsSection2 [class*="element"] .button-plus,
+body.fp-viewing-4 .elementsCanvas #elementsSection2 [class*="element"] .button-plus,
+body.fp-viewing-3 .elementsCanvas #elementsSection3 [class*="element"] .button-plus,
+body.fp-viewing-4 .elementsCanvas #elementsSection4 [class*="element"] .button-plus,
+body.fp-viewing-5 .elementsCanvas #elementsSection5 [class*="element"] .button-plus,
+body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] .button-plus {
+    animation-play-state: running;
+}
+
+.elementsCanvas .element0 {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 30%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 25px 35px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: left;
+}
+.elementsCanvas .element0 h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.elementsCanvas #elementsSection2 .element1 {
+    left: 36.5%;
+    bottom: 73%;
+}
+.elementsCanvas #elementsSection2 .element1.tooltip::before {
+    content: "Condensador";
+}
+
+body.fp-viewing-2 .elementsCanvas #elementsSection2 .element1,
+body.fp-viewing-3 .elementsCanvas #elementsSection2 .element1,
+body.fp-viewing-4 .elementsCanvas #elementsSection2 .element1 {
+    transition-delay: 0.2s;
+}
+body.fp-viewing-2 .elementsCanvas #elementsSection2 .element2,
+body.fp-viewing-3 .elementsCanvas #elementsSection2 .element2,
+body.fp-viewing-4 .elementsCanvas #elementsSection2 .element2 {
+    transition-delay: 0.4s;
+}
+body.fp-viewing-2 .elementsCanvas #elementsSection2 .element3,
+body.fp-viewing-3 .elementsCanvas #elementsSection2 .element3,
+body.fp-viewing-4 .elementsCanvas #elementsSection2 .element3 {
+    transition-delay: 0.6s;
+}
+body.fp-viewing-2 .elementsCanvas #elementsSection2 .element4,
+body.fp-viewing-3 .elementsCanvas #elementsSection2 .element4,
+body.fp-viewing-4 .elementsCanvas #elementsSection2 .element4 {
+    transition-delay: 0.8s;
+}
+body.fp-viewing-2 .elementsCanvas #elementsSection2 .element5,
+body.fp-viewing-3 .elementsCanvas #elementsSection2 .element5,
+body.fp-viewing-4 .elementsCanvas #elementsSection2 .element5 {
+    transition-delay: 1s;
+}
+body.fp-viewing-2 .elementsCanvas #elementsSection2 .element6,
+body.fp-viewing-3 .elementsCanvas #elementsSection2 .element6,
+body.fp-viewing-4 .elementsCanvas #elementsSection2 .element6 {
+    transition-delay: 1.2s;
+}
+body.fp-viewing-2 .elementsCanvas #elementsSection2 .element7,
+body.fp-viewing-3 .elementsCanvas #elementsSection2 .element7,
+body.fp-viewing-4 .elementsCanvas #elementsSection2 .element7 {
+    transition-delay: 1.4s;
+}
+
+.elementsCanvas #elementsSection2 .element2 {
+    transition-delay: 2s;
+    left: 53%;
+    bottom: 23.5%;
+}
+.elementsCanvas #elementsSection2 .element2.tooltip::before {
+    content: "Compresor";
+}
+.elementsCanvas #elementsSection2 .element3 {
+    transition-delay: 3s;
+    left: 31%;
+    bottom: 52%;
+}
+.elementsCanvas #elementsSection2 .element3.tooltip::before {
+    content: "El aire a temperatura ambiente ingresa por la toma frontal exterior";
+}
+.elementsCanvas #elementsSection2 .element4 {
+    transition-delay: 4s;
+    left: 63%;
+    bottom: 71%;
+}
+.elementsCanvas #elementsSection2 .element4.tooltip::before {
+    content: "Cooler";
+}
+.elementsCanvas #elementsSection2 .element5 {
+    transition-delay: 5s;
+    left: 34.5%;
+    bottom: 17%;
+}
+.elementsCanvas #elementsSection2 .element5.tooltip::before {
+    content: "Conectores batería";
+}
+.elementsCanvas #elementsSection2 .element6 {
+    transition-delay: 6s;
+    left: 34.5%;
+    bottom: 70.5%;
+}
+.elementsCanvas #elementsSection2 .element6.tooltip::before {
+    content: "Filtro de aire";
+}
+.elementsCanvas #elementsSection2 .element7 {
+    transition-delay: 7s;
+    left: 75%;
+    bottom: 78%;
+}
+.elementsCanvas #elementsSection2 .element7.tooltip::before {
+    content: "El aire a temperatura ambiente ingresa por la toma frontal exterior";
+}
+
+body.fp-viewing-10 #section9 .logoEndCanvas,
+body.fp-viewing-11 #section9 .logoEndCanvas {
+    height: calc(100vh - 350px) !important;
+    transition: all 1000ms ease-in-out;
+    transition-delay: 10ms;
+}
+body.fp-viewing-10 #section9 #logoEnd,
+body.fp-viewing-11 #section9 #logoEnd {
+    transform: translate(0px, 350px);
+    transition: all 1000ms ease-in-out;
+    transition-delay: 10ms;
+}
+body.fp-viewing-9 #section9 .logoEndCanvas {
+    height: calc(100vh - 0px) !important;
+    transition: all 1000ms ease-in-out;
+    transition-delay: 10ms;
+}
+body.fp-viewing-9 #section9 #logoEnd {
+    transform: translate(0px, 0px);
+    transition: all 1000ms ease-in-out;
+    transition-delay: 10ms;
+}
+
+body.fp-viewing-9 #mouse {
+    position: absolute;
+    bottom: -60px;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    transition-delay: 0.2s;
+}
+body.fp-viewing-11 #mouse {
+    bottom: 30px;
+    opacity: 0.25;
+    filter: blur(0);
+    transition-delay: 0s;
+}
+body.fp-viewing-11 #mouse {
+    opacity: 0;
+}
+body.fp-viewing-8 #projectVideos,
+body.fp-viewing-8 #elementsProject,
+body.fp-viewing-9 #projectVideos,
+body.fp-viewing-9 #elementsProject,
+body.fp-viewing-10 #projectVideos,
+body.fp-viewing-10 #elementsProject {
+    display: none;
+}
+body.fp-viewing-9 #sidemenu,
+body.fp-viewing-10 #sidemenu,
+body.fp-viewing-11 #sidemenu,
+body.fp-viewing-9 #sidemenu #logo-main,
+body.fp-viewing-10 #sidemenu #logo-main,
+body.fp-viewing-11 #sidemenu #logo-main {
+    filter: blur(25px) !important;
+    right: -120px !important;
+    opacity: 0;
+    transition: all 500ms ease-in-out !important;
+}
+
+body.fp-viewing-1 #logoProject {
+    transition-delay: 0.2s;
+}
+body.fp-viewing-0 #logoProject,
+body.fp-viewing-9 #logoProject,
+body.fp-viewing-10 #logoProject,
+body.fp-viewing-11 #logoProject {
+    filter: blur(25px);
+    left: -120px;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+#fpProject .next {
+    height: 165px;
+    width: 165px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+}
+#fpProject .next video {
+    position: absolute;
+    margin-left: -83px;
+    top: 52px;
+    height: 165px;
+    width: 165px;
+    right: unset;
+    opacity: 0;
+    transform: scale(0.8);
+    box-shadow: 0px 0px 0px #ffab8d;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+    transition-delay: 0s;
+}
+#fpProject .next img {
+    position: absolute;
+    margin-left: -60px;
+    width: 120px;
+    top: 250px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1s ease-in-out;
+    transition-delay: 0s;
+}
+body.fp-viewing-10 #fpProject .next video,
+body.fp-viewing-11 #fpProject .next video {
+    top: 2px;
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0px 2px 4px #ffab8d;
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+body.fp-viewing-10 #fpProject .next img,
+body.fp-viewing-11 #fpProject .next img {
+    top: 200px;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+#logoEnd {
+    width: 100vw;
+    transition: 1700ms;
+}
+#logoEnd h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.4s ease-in-out;
+}
+body.fp-viewing-9 #fpProject #logoEnd h3,
+body.fp-viewing-10 #fpProject #logoEnd h3,
+body.fp-viewing-11 #fpProject #logoEnd h3 {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+#logoEnd img {
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.4s ease-in-out;
+}
+body.fp-viewing-9 #fpProject #logoEnd img,
+body.fp-viewing-10 #fpProject #logoEnd img,
+body.fp-viewing-11 #fpProject #logoEnd img,
+body.fp-viewing-10 #section9 .fp-tableCell {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.35s;
+}
+body.fp-viewing-10 #fpProject #mouse {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0;
+}
+body.fp-viewing-11 #logoEnd,
+body.fp-viewing-11 #fpProject .next,
+body.fp-viewing-11 #mouse {
+    opacity: 0 !important;
+    transition: all 0.5s ease-in-out !important;
+}

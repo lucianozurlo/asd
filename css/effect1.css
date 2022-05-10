@@ -1,0 +1,174 @@
+#ip-container {
+    text-align: center;
+}
+.ip-header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    min-height: 480px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,1)
+}
+.ip-logo,
+.ip-loader {
+    display: table;
+    position: absolute;
+    width: 100vw;
+    cursor: default;
+    pointer-events: none;
+}
+.ip-logo {
+    top: 0;
+    height: 100vh;
+    opacity: 0.18;
+    -webkit-transform: translateY(25vh) scale(0.2);
+    transform: translateY(25vh) scale(0.2);
+}
+.ip-loader {
+    bottom: 10vh;
+    opacity: 1;
+}
+.ip-header .ip-inner {
+    display: block;
+    margin: 0 auto;
+}
+.ip-header .ip-logo img {
+    width: 15vw;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    height: calc(100vh - 5px);
+}
+.ip-header .ip-loader svg path {
+    fill: none;
+    stroke-width: 4;
+}
+.ip-header .ip-loader svg path.ip-loader-circlebg {
+    stroke: #222;
+}
+.ip-header .ip-loader svg path.ip-loader-circle {
+    -webkit-transition: stroke-dashoffset 0.2s;
+    transition: stroke-dashoffset 0.2s;
+    stroke: #c3af80;
+}
+
+
+/* Animations */
+
+/* Initial animation of header elements */
+.loading .ip-logo {
+	opacity: 0.18;
+    -webkit-animation: animInitialHeader 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+    animation: animInitialHeader 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+}
+.loading .ip-loader {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+@keyframes animInitialHeader {
+    from {
+        opacity: 0;
+	    -webkit-filter: blur(50px);
+	    filter: blur(50px);
+    }
+}
+
+/* Header elements when loading finishes */
+.loaded .ip-logo {
+    -webkit-animation: animLoadedLogo 1.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+    animation: animLoadedLogo 1.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+}
+@keyframes animLoadedLogo {
+    0% {
+		-webkit-transform: translateY(25vh) scale(0.2);
+		transform: translateY(25h) scale(0.2);
+        opacity: 0.18;
+		-webkit-filter: blur(0);
+		filter: blur(0);
+    }
+    15% {
+		-webkit-filter: blur(20px);
+		filter: blur(20px);
+    }
+    80% {
+        -webkit-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+        opacity: 1;
+		-webkit-filter: blur(0);
+		filter: blur(0);
+    }
+    100% {
+        -webkit-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+        opacity: 0;
+		-webkit-filter: blur(0);
+		filter: blur(0);
+    }
+}
+.loaded .ip-loader {
+    -webkit-animation: animLoadedLoader 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+    animation: animLoadedLoader 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+}
+@keyframes animLoadedLoader {
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(10vh) scale(0.25);
+        transform: translateY(10vh) scale(0.25);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        -webkit-transform:scale(1);
+        transform: scale(1);
+    }
+}
+
+/* Header animation when loading finishes */
+.loaded .ip-header {
+    -webkit-animation: animLoadedHeader 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+    animation: animLoadedHeader 1s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+	animation-delay: .8s;
+}
+@keyframes animLoadedHeader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* Content animations */
+.loaded .ip-main {
+	opacity: 1;
+	-webkit-animation: animMain 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+	animation: animMain 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+}
+@keyframes animMain {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Change layout class for header */
+.layout-switch .ip-header {
+    position: absolute;
+	display: none;
+}
+/* No JS */
+.no-js .ip-header {
+    position: relative;
+    min-height: 0;
+}
+.no-js .ip-header .ip-logo {
+    margin-top: 20px;
+    height: 180px;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+.no-js .ip-header .ip-logo img path {
+    fill: #fff;
+}
+

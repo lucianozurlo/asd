@@ -1,0 +1,10 @@
+#myContainer,
+.section,
+.fp-section,
+.fp-completely {
+    transition:  background-position 0s 0s !important;
+}
+.fp-bg{
+    transform: translate3d(0,0,0) !important;
+    transform: translateX(0px) translateY(0px) !important;
+}

@@ -1,0 +1,174 @@
+#fp-home.toggleOFF {
+    filter: grayscale(1) blur(20px);
+  }
+  #menu #sidemenu {
+    background: rgba(0, 0, 0, 0);
+  }
+  #menu #sidemenu:hover,
+  #menu #sidemenu.toggleON {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  #menu #sidemenu #header-logo-white {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s 0.2s linear;
+  }
+  body.fp-viewing-0 #menu #sidemenu ul {
+    opacity: 0.15;
+    left: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  body.fp-viewing-0 #menu #sidemenu:hover ul,
+  body.fp-viewing-0 #menu #sidemenu.toggleON ul {
+    opacity: 1;
+    left: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  /* body.fp-viewing-1  */#menu #sidemenu ul {
+    opacity: 1;
+  }
+  /* #menu #sidemenu ul {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  } */
+  /* #menu #sidemenu ul li.fliebenSubMenuli:nth-child(3) {
+    margin: -6px 0 0;
+    opacity: 0.4;
+  }
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(4),
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(5),
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(6),
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(7),
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(8) {
+    margin: -7px 0;
+    opacity: 0.4;
+  }
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(9) {
+    margin: 2px 0 -6px;
+    opacity: 0.4;
+  }
+  #menu #sidemenu:hover ul li.fliebenSubMenuli:nth-child(3),
+  #menu #sidemenu.toggleON ul li.fliebenSubMenuli:nth-child(3) {
+    margin: -6px 0 0;
+    opacity: 1;
+  }
+  #menu #sidemenu:hover ul li.fliebenSubMenuli:nth-child(4),
+  #menu #sidemenu:hover ul li.fliebenSubMenuli:nth-child(5),
+  #menu #sidemenu:hover ul li.fliebenSubMenuli:nth-child(6),
+  #menu #sidemenu:hover ul li.fliebenSubMenuli:nth-child(7),
+  #menu #sidemenu:hover ul li.fliebenSubMenuli:nth-child(8),
+  #menu #sidemenu.toggleON ul li.fliebenSubMenuli:nth-child(4),
+  #menu #sidemenu.toggleON ul li.fliebenSubMenuli:nth-child(5),
+  #menu #sidemenu.toggleON ul li.fliebenSubMenuli:nth-child(6),
+  #menu #sidemenu.toggleON ul li.fliebenSubMenuli:nth-child(7),
+  #menu #sidemenu.toggleON ul li.fliebenSubMenuli:nth-child(8) {
+    margin: 2px 0;
+    opacity: 1;
+  }
+  #menu #sidemenu:hover ul li.fliebenSubMenuli:nth-child(9),
+  #menu #sidemenu.toggleON ul li.fliebenSubMenuli:nth-child(9) {
+    margin: 2px 0 12px;
+    opacity: 1;
+  } */
+  #menu #sidemenu ul li a p {
+    color: #fff;
+  }
+  
+  /* #menu #sidemenu ul li.fliebenSubMenuli a p {
+    color: #d6f7ff;
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  
+  #menu #sidemenu:hover ul li.fliebenSubMenuli a:hover p,
+  #menu #sidemenu.toggleON ul li.fliebenSubMenuli a:hover p {
+    color: #5ae0ff;
+  }
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(3) a {
+    pointer-events: none;
+    cursor: default;
+    display: block;
+  }
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(3) a p {
+    color: #5ae0ff;
+    font-weight: 600;
+  } */
+  #menu #sidemenu ul li a span {
+  /*   top: 8px;
+    left: 8px;
+    width: 4px;
+    height: 4px; */
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+  }
+  #menu #sidemenu ul li a span {
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  /* #menu #sidemenu ul li.fliebenSubMenuli a span {
+    background: #d6f7ff;
+    transition: all 0.2s ease-in-out;
+  }
+  #menu #sidemenu:hover ul li.fliebenSubMenuli a:hover span,
+  #menu #sidemenu.toggleON ul li.fliebenSubMenuli a:hover span,
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(3) a span {
+    background: #5ae0ff;
+    transition: all 0.2s ease-in-out;
+  }
+  #menu #sidemenu ul li.fliebenSubMenuli:nth-child(3) a span {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    transition: all 0.2s ease-in-out;
+    background: #5ae0ff;
+    pointer-events: none;
+    cursor: default;
+    display: block;
+  } */
+  #menu #sidemenu #ig i,
+  #menu #sidemenu #ig p,
+  #menu #sidemenu ul li a p {
+    color: #fff;
+  }
+  
+  
+  /* proyectmenu */
+  #menu #proyectmenu {
+    background: rgba(90, 225, 255, 0);
+  }
+  #menu #proyectmenu:hover {
+    background: rgba(90, 225, 255, 0.05);
+  }
+  #menu #proyectmenu ul li a p {
+    color: #fff;
+  }
+  #menu #proyectmenu ul li a:hover p {
+    color: #5ae0ff;
+  }
+  #menu #proyectmenu ul li a span span {
+    background: #5ae0ff;
+    border-color: #5ae0ff;
+  }
+  
+  
+  body.fp-viewing-0 #menu #proyectmenu ul li:nth-child(1) a span span,
+  body.fp-viewing-1 #menu #proyectmenu ul li:nth-child(2) a span span,
+  body.fp-viewing-2 #menu #proyectmenu ul li:nth-child(3) a span span,
+  body.fp-viewing-3 #menu #proyectmenu ul li:nth-child(4) a span span,
+  body.fp-viewing-4 #menu #proyectmenu ul li:nth-child(5) a span span,
+  body.fp-viewing-5 #menu #proyectmenu ul li:nth-child(6) a span span,
+  body.fp-viewing-6 #menu #proyectmenu ul li:nth-child(7) a span span,
+  body.fp-viewing-7 #menu #proyectmenu ul li:nth-child(8) a span span,
+  body.fp-viewing-8 #menu #proyectmenu ul li:nth-child(9) a span span,
+  body.fp-viewing-9 #menu #proyectmenu ul li:nth-child(10) a span span,
+  body.fp-viewing-10 #menu #proyectmenu ul li:nth-child(11) a span span,
+  body.fp-viewing-11 #menu #proyectmenu ul li:nth-child(12) a span span,
+  body.fp-viewing-12 #menu #proyectmenu ul li:nth-child(13) a span span {
+    width: 10px;
+    height: 10px;
+    background: rgba(90, 225, 255, 0);
+    border-width: 2px;
+  }
