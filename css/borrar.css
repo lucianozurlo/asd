@@ -1,0 +1,142 @@
+#menu #proyectmenu {
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background: rgba(255, 255, 255, 0);
+    opacity: 1;
+    filter: blur(0);
+    transition: all 0.3s ease-in-out;
+  }
+  #menu #proyectmenu:hover {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+  #ip-container.loading #menu #proyectmenu,
+  body.fp-viewing-0 #menu #proyectmenu {
+    opacity: 0;
+    left: -80px;
+  }
+  body.fp-viewing-0 #menu #proyectmenu {
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 500ms ease;
+    z-index: 1;
+    left: -120px;
+  }
+  body.fp-viewing-1 #menu #proyectmenu {
+    transition-delay: 1.8s;
+  }
+  
+  
+  #menu #proyectmenu ul {
+    z-index: 2011;
+    height: 100vh;
+    left: 30px;
+    margin: 0 auto;
+    padding: 0;
+    opacity: 0.5;
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    transition: right 0.3s ease;
+  }
+  #menu #proyectmenu:hover ul {
+    right: 150px;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  #menu #proyectmenu ul li {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    transition: margin 0.3s ease;
+  }
+  #menu #proyectmenu:hover ul li {
+    margin: 5px 0;
+    transition: margin 0.3s ease;
+  }
+  #menu #proyectmenu ul li a {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* cursor: pointer; */
+    text-decoration: none;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+  }
+  #menu #proyectmenu ul li a:hover {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  #menu #proyectmenu ul li#liEKO,
+  #menu #proyectmenu ul li#liSentry,
+  #menu #proyectmenu ul li#liFlieBen,
+  #menu #proyectmenu ul li#liMagma {
+    margin: -16px 0;
+    opacity: 0;
+  }
+  #menu #proyectmenu:hover ul li#liEKO,
+  #menu #proyectmenu:hover ul li#liSentry,
+  #menu #proyectmenu:hover ul li#liFlieBen,
+  #menu #proyectmenu:hover ul li#liMagma {
+    margin: -18px 0;
+    opacity: 0;
+  }
+  #menu #proyectmenu ul li a p {
+    color: #000;
+    width: 250px;
+    margin-left: 0px;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;  
+    line-height: 1;
+    transition: all 0.2s ease;
+    text-align: left;
+  }
+  #menu #proyectmenu:hover ul li a p {
+    margin-left: 35px;
+    width: 100%;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  #menu #proyectmenu:hover ul li a:hover p {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  #menu #proyectmenu ul li#liEKO a p,
+  #menu #proyectmenu ul li#liSentry a p,
+  #menu #proyectmenu ul li#liFlieBen a p,
+  #menu #proyectmenu ul li#liMagma a p {
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  #menu #proyectmenu ul li a span {
+  /*   top: 8px;
+    right: 8px; */
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.2s ease;
+  }
+  .md-show + #menu #proyectmenu,
+  .md-show + #menu #proyectmenu:hover{
+    left: -100px;
+  }
+  
+  

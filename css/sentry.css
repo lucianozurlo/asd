@@ -1,0 +1,570 @@
+.ip-header .ip-loader svg path.ip-loader-circle {
+    stroke: #4cd8bd;
+}
+
+body {
+    background: #fff;
+}
+
+.fp-bg {
+    color: #000;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.fp-last {
+    height: 100vh;
+}
+
+.fp-scroller {
+    height: 100vh;
+}
+
+#overallContent {
+    opacity: 0;
+}
+
+body .ip-container.loaded #overallContent {
+    opacity: 1;
+}
+
+#fpProject {
+    z-index: 1;
+}
+
+
+/* button-plus */
+.button-plus {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-table;
+    position: relative;
+    text-align: center;
+    color: #e6e6e6;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 0.2s ease-in;
+    animation: pulsate-fwd 6s ease-in-out infinite both;
+    animation-play-state: paused;
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.75);
+        box-shadow: 0 0 5px 0 rgba(76, 216, 189, 1);
+    }
+
+    20% {
+        opacity: 0.5;
+        transform: scale(0.75);
+        box-shadow: 0 0 5px 0 rgba(76, 216, 189, 1);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 10px 0 rgba(76, 216, 189, 1);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: scale(0.75);
+        box-shadow: 0 0 5px 0 rgba(76, 216, 189, 1);
+    }
+}
+
+.button-plus:hover {
+    color: #000 !important;
+    box-shadow: 0 0 30px 0 rgba(230, 230, 230, 0.5);
+    transition: all 0.2s ease-out;
+    transform: scale(0.8);
+    /* cursor: pointer; */
+    animation-play-state: paused !important;
+    opacity: 1 !important;
+    transition: opacity 1s ease-in-out;
+}
+
+.button-plus:hover::before {
+    animation: shine 0.5s 0s linear;
+}
+
+.button-plus:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.button-plus:before {
+    display: block;
+    width: 0;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #000;
+    box-shadow: 0 0 15px 3px #000;
+    transform: skewX(-20deg);
+}
+
+.button-plus i {
+    font-size: 12px;
+    padding: 6px 6.75px;
+    transition: all 0.2s ease-in;
+}
+
+.button-plus:hover i {
+    transform: scale(0.1);
+}
+
+body#sentryProject .button-plus {
+    color: #4cd8bd;
+}
+
+body#sentryProject .button-plus:hover {
+    box-shadow: 0 0 30px 0 rgba(76, 216, 189, 0.5);
+    background-color: #4cd8bd;
+}
+
+@keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+/* #sentryVideoBlack,
+#sentryVideoBlack video {
+    background: #000 !important;
+} */
+
+
+/**/
+
+#elementsProject {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.elementsCanvas {
+    position: absolute;
+    z-index: 222;
+    top: 50%;
+    right: 50%;
+    width: 177.78vh;
+    height: 56.25vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: revert;
+    transform: translate(50%, -50%);
+}
+
+#elementsProject .elementsCanvas {
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+
+.elementsCanvas p {
+    color: #757575;
+    text-align: left;
+    margin: 0 0 7px 0;
+    font-size: 16px;
+}
+
+.elementsCanvas #elementsSection1,
+.elementsCanvas #elementsSection2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.elementsCanvas [class*="element"] {
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 1s ease-in-out;
+}
+
+body.fp-viewing-1 .elementsCanvas #elementsSection1 [class*="element"],
+body.fp-viewing-2 .elementsCanvas #elementsSection2 [class*="element"],
+body.fp-viewing-3 .elementsCanvas #elementsSection3 [class*="element"],
+body.fp-viewing-4 .elementsCanvas #elementsSection4 [class*="element"],
+body.fp-viewing-5 .elementsCanvas #elementsSection5 [class*="element"],
+body.fp-viewing-6 .elementsCanvas #elementsSection6 [class*="element"] {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.2s .7s ease-in-out;
+}
+
+.elementsCanvas .element0 {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 30%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    backdrop-filter: blur(5px);
+    padding: 25px 35px 18px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.elementsCanvas .element0 h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.elementsCanvas #elementsSection1 .element0 {
+    left: 10%;
+}
+
+.elementsCanvas #elementsSection2 .element0,
+.elementsCanvas #elementsSection3 .element0 {
+    top: 30%;
+    width: 25%;
+    bottom: unset;
+}
+
+#fpProject video {
+    top: 50%;
+    right: 50%;
+    width: 177.78vh;
+    height: 56.25vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: revert;
+    background: #fff;
+    transform: translate(50%, -50%);
+    transition: right 0.6s, transform 0.6s;
+    transition-delay: 1.5s;
+}
+
+#introProject {
+    position: absolute;
+    margin: 0 auto;
+    width: 100vw;
+    bottom: 10vh;
+    opacity: 1;
+    z-index: 1;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 1.2s ease-in-out;
+    transform: scale(0.9);
+}
+
+#introProject img {
+    width: 25vw;
+    filter: grayscale(0) blur(0px);
+    transition: .5s;
+}
+
+#introProject p {
+    font-size: 20px;
+    color: #757575;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+#introProject :nth-child(2) {
+    margin-top: 35px;
+    font-weight: 600;
+}
+
+body.fp-viewing-0 .loaded #introProject {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+    transition: all 1.2s 0.5s ease-in-out;
+}
+
+body.fp-viewing-1 .loaded #introProject {
+    opacity: 0;
+    filter: blur(50px);
+    transition: all 0.75s ease-in-out;
+    transform: scale(0.85);
+    bottom: 15vh;
+}
+
+#logoProject {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10000;
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.2s ease-in-out;
+}
+
+#logoProject img {
+    height: 20px;
+}
+
+body.fp-viewing-0 #logoProject {
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.5s 0.75s ease-in-out;
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+#mouse {
+    position: absolute;
+    bottom: -60px;
+    width: calc(100% - 600px);
+    left: 300px;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s 1.1s ease-in-out;
+    z-index: 99999;
+}
+
+#mouse .light {
+    display: none;
+}
+
+body .loaded #mouse {
+    bottom: 30px;
+    opacity: 0.05;
+    filter: blur(0);
+    transition-delay: 0s;
+}
+
+body.fp-viewing-0 .loaded #mouse {
+    transition-delay: 1.5s;
+}
+
+#mouse img {
+    width: 28px;
+}
+
+#section6 .fp-bg,
+#section7 .fp-bg,
+#section8 .fp-bg,
+#section9 .fp-bg,
+#section10 .fp-bg {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(230, 230, 230, 1) 100%);
+}
+
+body.fp-viewing-15 #section14 .logoEndCanvas,
+body.fp-viewing-16 #section14 .logoEndCanvas {
+    height: calc(100vh - 350px) !important;
+    transition: all 1000ms ease-in-out;
+    transition-delay: 10ms;
+}
+
+body.fp-viewing-15 #section14 #logoEnd,
+body.fp-viewing-16 #section14 #logoEnd {
+    transform: translate(0px, 350px);
+    transition: all 1000ms ease-in-out;
+    transition-delay: 10ms;
+}
+
+body.fp-viewing-14 #section14 .logoEndCanvas {
+    height: calc(100vh - 0px) !important;
+    transition: all 1000ms ease-in-out;
+    transition-delay: 10ms;
+}
+
+body.fp-viewing-14 #section14 #logoEnd {
+    transform: translate(0px, 0px);
+    transition: all 1000ms ease-in-out;
+    transition-delay: 10ms;
+}
+
+body.fp-viewing-14 #mouse {
+    position: absolute;
+    bottom: -60px;
+    opacity: 0;
+    filter: blur(5px);
+    z-index: 1;
+    transition-delay: 0.2s;
+    transition: all 0.5s ease-in-out;
+}
+
+body.fp-viewing-16 #mouse {
+    bottom: 30px;
+    opacity: 0.25;
+    filter: blur(0);
+    transition-delay: 0s;
+}
+
+body.fp-viewing-16 #mouse {
+    opacity: 0;
+}
+
+body.fp-viewing-14 #sidemenu,
+body.fp-viewing-15 #sidemenu,
+body.fp-viewing-16 #sidemenu,
+body.fp-viewing-14 #sidemenu #logo-main,
+body.fp-viewing-15 #sidemenu #logo-main,
+body.fp-viewing-16 #sidemenu #logo-main {
+    filter: blur(25px) !important;
+    right: -120px !important;
+    opacity: 0;
+    transition: all 500ms ease-in-out !important;
+}
+
+body.fp-viewing-1 #logoProject {
+    transition-delay: .2s;
+}
+
+body.fp-viewing-0 #logoProject,
+body.fp-viewing-14 #logoProject,
+body.fp-viewing-15 #logoProject,
+body.fp-viewing-16 #logoProject {
+    filter: blur(25px);
+    left: -120px;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+#fpProject .next {
+    height: 165px;
+    width: 165px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+}
+
+#fpProject .next video {
+    position: absolute;
+    margin-left: -83px;
+    top: 52px;
+    height: 165px;
+    width: 165px;
+    right: unset;
+    opacity: 0;
+    transform: scale(0.8);
+    box-shadow: 0px 0px 0px #5ae0ff;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+    transition-delay: 0s;
+}
+
+#fpProject .next img {
+    position: absolute;
+    margin-left: -60px;
+    width: 120px;
+    top: 250px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1s ease-in-out;
+    transition-delay: 0s;
+}
+
+body.fp-viewing-15 #fpProject .next video,
+body.fp-viewing-16 #fpProject .next video {
+    top: 2px;
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0px 2px 4px #5ae0ff;
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+body.fp-viewing-15 #fpProject .next img,
+body.fp-viewing-16 #fpProject .next img {
+    top: 200px;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+#logoEnd {
+    width: 100vw;
+    transition: 1700ms;
+}
+
+#logoEnd h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.4s ease-in-out;
+}
+
+body.fp-viewing-14 #fpProject #logoEnd h3,
+body.fp-viewing-15 #fpProject #logoEnd h3,
+body.fp-viewing-16 #fpProject #logoEnd h3 {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+body.fp-viewing-14 #mouse,
+body.fp-viewing-15 #mouse,
+body.fp-viewing-16 #mouse {
+    opacity: .2;
+}
+
+body.fp-viewing-14 #mouse .light,
+body.fp-viewing-15 #mouse .light,
+body.fp-viewing-16 #mouse .light {
+    display: unset;
+}
+
+body.fp-viewing-14 #mouse .dark,
+body.fp-viewing-15 #mouse .dark,
+body.fp-viewing-16 #mouse .dark {
+    display: none;
+}
+
+
+#logoEnd img {
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.4s ease-in-out;
+}
+
+body.fp-viewing-14 #fpProject #logoEnd img,
+body.fp-viewing-15 #fpProject #logoEnd img,
+body.fp-viewing-16 #fpProject #logoEnd img,
+body.fp-viewing-15 #section14 .fp-tableCell {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1.5s ease-in-out;
+    transition-delay: 0.35s;
+}
+
+body.fp-viewing-15 #fpProject #mouse {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0;
+}
+
+body.fp-viewing-16 #logoEnd,
+body.fp-viewing-16 #fpProject .next,
+body.fp-viewing-16 #mouse {
+    opacity: 0 !important;
+    transition: all 0.5s ease-in-out !important;
+}

@@ -1,0 +1,111 @@
+        h1{
+            font-weight: 900;
+            font-size: 8em;
+            -webkit-text-shadow: 0 .3rem .9rem rgba(0,0,0,.4);
+            text-shadow: 0 0.3rem 0.9rem rgba(0,0,0,.4);
+            letter-spacing: -3px;
+        }
+        h1,
+        .intro p{
+            color: #fff;
+        }
+        .intro p{
+            text-shadow: -1px 1px 8px rgba(0,0,0,.8);
+        }
+        #section1 h1{
+            -webkit-text-shadow: none;
+            text-shadow: none;
+        }
+        #slide1-1 h1{
+            color: #444;
+        }
+        /*
+        * Setting the backgrounds for each section / slide
+        */
+        #section4 .fp-bg:before,
+        #section2 .fp-bg:before{
+            content: '';
+            position: absolute;
+            display: block;
+            background: rgba(173, 173, 173, 0.2);
+            top:0;
+            bottom:0;
+            height: 100%;
+            width: 100%;
+        }
+        .fp-bg{
+            background-size: cover;
+            transform: translate3d(0,0,0);
+            -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+            backface-visibility: hidden;
+        }
+        #slide1-1 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-1-1.jpg');
+            background-position: center 80%;
+        }
+        #slide1-2 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-3-2.jpg');
+        }
+        #slide1-3 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-3-3.jpg');
+        }
+
+        #section2 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-2.jpg');
+            background-position: center 60%;
+        }
+        #section2 h1{
+            color: #fff;
+        }
+        #slide3-1 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-3.jpg');
+            background-position: 50% 65%;
+        }
+        #slide3-2 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-3-2.jpg');
+        }
+        #slide3-3 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-3-3.jpg');
+        }
+        #slide3-4 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-3-4.jpg');
+        }
+        #section4 .fp-bg{
+            background-image: url('https://alvarotrigo.com/fullPage/extensions/imgs/parallax/parallax-4.jpg');
+        }
+        .button a.button-purchase:hover {
+            background-color: #3cc63c !important;
+            color: #fff !important;
+        }
+        .documentation a{
+            font-size: 13px;
+            margin: 20px 0;
+            padding: 0;
+            color: #222;
+        }
+
+        /*
+        * Configurations
+        */
+        #actions{
+            position:fixed;
+            top: 73px;
+            left: 30px;
+            z-index: 99999;
+        }
+        #actions li{
+            background: rgba(0,0,0,0.8);
+            padding: 7px;
+            margin: 2px;
+            color: #ccc;
+            display: inline-block;
+            cursor: pointer;
+        }
+        #actions li:hover{
+            color: #fff;
+            background: #81A140;
+        }
+        #actions .active{
+            color: #fff;
+            background: #81A140;
+        }

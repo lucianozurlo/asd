@@ -1,0 +1,291 @@
+/* BG
+ * --------------------------------------- */
+body.fp-viewing-Zeta-id,
+body.fp-viewing-WeDoIndustrialDesign,
+body.fp-viewing-Sentry,
+body.fp-viewing-OurValues {
+    background: #fff;
+}
+body.fp-viewing-EKO,
+body.fp-viewing-FlieBen,
+body.fp-viewing-Magma,
+body.fbody.p-viewing-OurProcess,
+body.fp-viewing-OurProcess,
+body.fp-viewing-ContactUs {
+    background: #000;
+}
+body.fp-viewing-OurTeam {
+    background: #f7f7f7;
+}
+
+#fp-home.toggleOFF {
+    filter: grayscale(1) blur(20px);
+}
+
+/* Side Menu - Home
+ * --------------------------------------- */
+body.fp-viewing-EKO #menu #sidemenu,
+body.fp-viewing-FlieBen #menu #sidemenu,
+body.fp-viewing-Magma #menu #sidemenu,
+body.fp-viewing-OurProcess #menu #sidemenu,
+body.fp-viewing-ContactUs #menu #sidemenu {
+    background: rgba(0, 0, 0, 0);
+}
+body.fp-viewing-EKO #menu #sidemenu:hover,
+body.fp-viewing-FlieBen #menu #sidemenu:hover,
+body.fp-viewing-Magma #menu #sidemenu:hover,
+body.fp-viewing-OurProcess #menu #sidemenu:hover,
+body.fp-viewing-ContactUs #menu #sidemenu:hover,
+body.fp-viewing-EKO #menu #sidemenu.toggleON,
+body.fp-viewing-FlieBen #menu #sidemenu.toggleON,
+body.fp-viewing-Magma #menu #sidemenu.toggleON,
+body.fp-viewing-OurProcess #menu #sidemenu.toggleON,
+body.fp-viewing-ContactUs #menu #sidemenu.toggleON {
+    background: rgba(0, 0, 0, 0.2);
+}
+body.fp-viewing-EKO #menu #sidemenu ul li#liEKO,
+body.fp-viewing-Sentry #menu #sidemenu ul li#liEKO,
+body.fp-viewing-FlieBen #menu #sidemenu ul li#liEKO,
+body.fp-viewing-Magma #menu #sidemenu ul li#liEKO {
+    margin: 0;
+    opacity: 0.4;
+}
+body.fp-viewing-EKO #menu #sidemenu ul li#liSentry,
+body.fp-viewing-Sentry #menu #sidemenu ul li#liSentry,
+body.fp-viewing-FlieBen #menu #sidemenu ul li#liSentry,
+body.fp-viewing-Magma #menu #sidemenu ul li#liSentry,
+body.fp-viewing-EKO #menu #sidemenu ul li#liFlieBen,
+body.fp-viewing-Sentry #menu #sidemenu ul li#liFlieBen,
+body.fp-viewing-FlieBen #menu #sidemenu ul li#liFlieBen,
+body.fp-viewing-Magma #menu #sidemenu ul li#liFlieBen {
+    margin: 0;
+    opacity: 0.4;
+}
+body.fp-viewing-EKO #menu #sidemenu ul li#liMagma,
+body.fp-viewing-Sentry #menu #sidemenu ul li#liMagma,
+body.fp-viewing-FlieBen #menu #sidemenu ul li#liMagma,
+body.fp-viewing-Magma #menu #sidemenu ul li#liMagma {
+    margin: 0;
+    opacity: 0.4;
+}
+body.fp-viewing-EKO #menu #sidemenu:hover ul li#liEKO,
+body.fp-viewing-Sentry #menu #sidemenu:hover ul li#liEKO,
+body.fp-viewing-FlieBen #menu #sidemenu:hover ul li#liEKO,
+body.fp-viewing-Magma #menu #sidemenu:hover ul li#liEKO,
+body.fp-viewing-EKO #menu #sidemenu.toggleON ul li#liEKO,
+body.fp-viewing-Sentry #menu #sidemenu.toggleON ul li#liEKO,
+body.fp-viewing-FlieBen #menu #sidemenu.toggleON ul li#liEKO,
+body.fp-viewing-Magma #menu #sidemenu.toggleON ul li#liEKO {
+    margin: 4px 0 0;
+    opacity: 1;
+}
+body.fp-viewing-EKO #menu #sidemenu:hover ul li#liSentry,
+body.fp-viewing-Sentry #menu #sidemenu:hover ul li#liSentry,
+body.fp-viewing-FlieBen #menu #sidemenu:hover ul li#liSentry,
+body.fp-viewing-Magma #menu #sidemenu:hover ul li#liSentry,
+body.fp-viewing-EKO #menu #sidemenu:hover ul li#liFlieBen,
+body.fp-viewing-Sentry #menu #sidemenu:hover ul li#liFlieBen,
+body.fp-viewing-FlieBen #menu #sidemenu:hover ul li#liFlieBen,
+body.fp-viewing-Magma #menu #sidemenu:hover ul li#liFlieBen,
+body.fp-viewing-EKO #menu #sidemenu.toggleON ul li#liSentry,
+body.fp-viewing-Sentry #menu #sidemenu.toggleON ul li#liSentry,
+body.fp-viewing-FlieBen #menu #sidemenu.toggleON ul li#liSentry,
+body.fp-viewing-Magma #menu #sidemenu.toggleON ul li#liSentry,
+body.fp-viewing-EKO #menu #sidemenu.toggleON ul li#liFlieBen,
+body.fp-viewing-Sentry #menu #sidemenu.toggleON ul li#liFlieBen,
+body.fp-viewing-FlieBen #menu #sidemenu.toggleON ul li#liFlieBen,
+body.fp-viewing-Magma #menu #sidemenu.toggleON ul li#liFlieBen {
+    margin: 4px 0 0;
+    opacity: 1;
+}
+body.fp-viewing-EKO #menu #sidemenu:hover ul li#liMagma,
+body.fp-viewing-Sentry #menu #sidemenu:hover ul li#liMagma,
+body.fp-viewing-FlieBen #menu #sidemenu:hover ul li#liMagma,
+body.fp-viewing-Magma #menu #sidemenu:hover ul li#liMagma,
+body.fp-viewing-EKO #menu #sidemenu.toggleON ul li#liMagma,
+body.fp-viewing-Sentry #menu #sidemenu.toggleON ul li#liMagma,
+body.fp-viewing-FlieBen #menu #sidemenu.toggleON ul li#liMagma,
+body.fp-viewing-Magma #menu #sidemenu.toggleON ul li#liMagma {
+    margin: 4px 0 5px;
+    opacity: 1;
+}
+body.fp-viewing-EKO #menu #sidemenu #ig p,
+body.fp-viewing-EKO #menu #sidemenu #ig i,
+body.fp-viewing-FlieBen #menu #sidemenu #ig p,
+body.fp-viewing-FlieBen #menu #sidemenu #ig i,
+body.fp-viewing-Magma #menu #sidemenu #ig p,
+body.fp-viewing-Magma #menu #sidemenu #ig i,
+body.fp-viewing-OurProcess #menu #sidemenu #ig p,
+body.fp-viewing-OurProcess #menu #sidemenu #ig i,
+body.fp-viewing-ContactUs #menu #sidemenu #ig p,
+body.fp-viewing-ContactUs #menu #sidemenu #ig i,
+body.fp-viewing-EKO #menu #sidemenu ul li a p,
+body.fp-viewing-FlieBen #menu #sidemenu ul li a p,
+body.fp-viewing-Magma #menu #sidemenu ul li a p,
+body.fp-viewing-OurProcess #menu #sidemenu ul li a p,
+body.fp-viewing-ContactUs #menu #sidemenu ul li a p {
+    color: #fff;
+}
+body.fp-viewing-EKO #menu #sidemenu ul li:nth-child(3) a:hover {
+    opacity: 1;
+}
+body.fp-viewing-EKO #menu #sidemenu ul li:nth-child(3) a p {
+    color: #9a71ff;
+}
+body.fp-viewing-Sentry #menu #sidemenu ul li:nth-child(4) a:hover {
+    opacity: 1;
+}
+body.fp-viewing-Sentry #menu #sidemenu ul li:nth-child(4) a p {
+    color: #4cd8bd;
+}
+body.fp-viewing-FlieBen #menu #sidemenu ul li:nth-child(5) a:hover {
+    opacity: 1;
+}
+body.fp-viewing-FlieBen #menu #sidemenu ul li:nth-child(5) a p {
+    color: #5ae0ff;
+}
+body.fp-viewing-Magma #menu #sidemenu ul li:nth-child(6) a:hover {
+    opacity: 1;
+}
+body.fp-viewing-Magma #menu #sidemenu ul li:nth-child(6) a p {
+    color: #ffab8d;
+}
+body.fp-viewing-fp-viewing-WeDoIndustrialDesign #menu #sidemenu ul li:nth-child(1) a span span,
+body.fp-viewing-EKO #menu #sidemenu ul li:nth-child(2) a span span,
+body.fp-viewing-Sentry #menu #sidemenu ul li:nth-child(2) a span span,
+body.fp-viewing-FlieBen #menu #sidemenu ul li:nth-child(2) a span span,
+body.fp-viewing-Magma #menu #sidemenu ul li:nth-child(2) a span span,
+body.fp-viewing-OurValues #menu #sidemenu ul li:nth-child(7) a span span,
+body.fp-viewing-OurProcess #menu #sidemenu ul li:nth-child(8) a span span,
+body.fp-viewing-OurTeam #menu #sidemenu ul li:nth-child(9) a span span,
+body.fp-viewing-ContactUs #menu #sidemenu ul li:nth-child(10) a span span {
+    width: 10px;
+    height: 10px;
+}
+body.fp-viewing-EKO #menu #sidemenu ul li:nth-child(3) a span span,
+body.fp-viewing-Sentry #menu #sidemenu ul li:nth-child(4) a span span,
+body.fp-viewing-FlieBen #menu #sidemenu ul li:nth-child(5) a span span,
+body.fp-viewing-Magma #menu #sidemenu ul li:nth-child(6) a span span {
+/*     top: 4px;
+    left: 3px; */
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid #fff;
+}
+body.fp-viewing-Sentry #menu #sidemenu ul li:nth-child(4) a span span {
+    border: 2px solid #000;
+}
+body.fp-viewing-EKO #menu #sidemenu:hover ul li:nth-child(3) a span span,
+body.fp-viewing-FlieBen #menu #sidemenu:hover ul li:nth-child(5) a span span,
+body.fp-viewing-Magma #menu #sidemenu:hover ul li:nth-child(6) a span span,
+body.fp-viewing-EKO #menu #sidemenu.toggleON ul li:nth-child(3) a span span,
+body.fp-viewing-FlieBen #menu #sidemenu.toggleON ul li:nth-child(5) a span span,
+body.fp-viewing-Magma #menu #sidemenu.toggleON ul li:nth-child(6) a span span {
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #fff;
+}
+body.fp-viewing-Sentry #menu #sidemenu:hover ul li:nth-child(4) a span span,
+body.fp-viewing-Sentry #menu #sidemenu.toggleON ul li:nth-child(4) a span span {
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #000;
+}
+
+body.fp-viewing-WeDoIndustrialDesign #menu #sidemenu ul li a span span,
+body.fp-viewing-Sentry #menu #sidemenu ul li a span span,
+body.fp-viewing-OurValues #menu #sidemenu ul li a span span,
+body.fp-viewing-OurTeam #menu #sidemenu ul li a span span {
+    background: rgba(0, 0, 0, 1);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #000;
+}
+body.fp-viewing-EKO #menu #sidemenu ul li a span span,
+body.fp-viewing-FlieBen #menu #sidemenu ul li a span span,
+body.fp-viewing-Magma #menu #sidemenu ul li a span span,
+body.fp-viewing-OurProcess #menu #sidemenu ul li a span span,
+body.fp-viewing-ContactUs #menu #sidemenu ul li a span span {
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #fff;
+}
+body.fp-viewing-EKO #menu #sidemenu:hover ul li:nth-child(3) a span span,
+body.fp-viewing-EKO #menu #sidemenu.toggleON ul li:nth-child(3) a span span {
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #fff;
+}
+body.fp-viewing-Sentry #menu #sidemenu:hover ul li:nth-child(4) a span span,
+body.fp-viewing-Sentry #menu #sidemenu.toggleON ul li:nth-child(4) a span span {
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #fff;
+}
+body.fp-viewing-FlieBen #menu #sidemenu:hover ul li:nth-child(5) a span span,
+body.fp-viewing-FlieBen #menu #sidemenu.toggleON ul li:nth-child(5) a span span {
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #fff;
+}
+body.fp-viewing-Magma #menu #sidemenu:hover ul li:nth-child(6) a span span,
+body.fp-viewing-Magma #menu #sidemenu.toggleON ul li:nth-child(6) a span span {
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #fff;
+}
+body.fp-viewing-EKO #menu #sidemenu:hover ul li:nth-child(3) a span span,
+body.fp-viewing-EKO #menu #sidemenu.toggleON ul li:nth-child(3) a span span {
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+    border-color: #9a71ff;
+}
+body.fp-viewing-Sentry #menu #sidemenu:hover ul li:nth-child(4) a span span,
+body.fp-viewing-Sentry #menu #sidemenu.toggleON ul li:nth-child(4) a span span {
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+    border-color: #4cd8bd;
+}
+body.fp-viewing-FlieBen #menu #sidemenu:hover ul li:nth-child(5) a span span,
+body.fp-viewing-FlieBen #menu #sidemenu.toggleON ul li:nth-child(5) a span span {
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+    border-color: #5ae0ff;
+}
+body.fp-viewing-Magma #menu #sidemenu:hover ul li:nth-child(6) a span span,
+body.fp-viewing-Magma #menu #sidemenu.toggleON ul li:nth-child(6) a span span {
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.2s ease-in-out;
+    border-color: #ffab8d;
+}
+body.fp-viewing-Zeta-id #menu #sidemenu,
+body.fp-viewing-Zeta-id #menu #sidemenu #logo-main {
+    opacity: 0;
+    right: -80px;
+}
+body.fp-viewing-WeDoIndustrialDesign #menu #sidemenu #header-logo,
+body.fp-viewing-Sentry #menu #sidemenu #header-logo,
+body.fp-viewing-OurValues #menu #sidemenu #header-logo,
+body.fp-viewing-OurTeam #menu #sidemenu #header-logo {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+    transition-delay: 0.2s;
+}
+body.fp-viewing-EKO #menu #sidemenu #header-logo-white,
+body.fp-viewing-FlieBen #menu #sidemenu #header-logo-white,
+body.fp-viewing-Magma #menu #sidemenu #header-logo-white,
+body.fp-viewing-OurProcess #menu #sidemenu #header-logo-white {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    transition-delay: 0.2s;
+}
+
+
+#langSwitch .checkLayer {
+    background-color: rgba(195, 175, 128, 0) !important;
+}
+#langSwitch:hover .checkLayer {
+    background-color: rgba(195, 175, 128, 1) !important;
+}

@@ -1,0 +1,6 @@
+#myContainer,
+.section,
+.fp-section,
+.fp-completely {
+    transition:  background-position 0s 0s !important;
+}

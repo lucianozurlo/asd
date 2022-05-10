@@ -1,0 +1,109 @@
+/* SIDEMENU */
+#menu #sidemenu {
+    background: rgba(255,255,255, 0);
+}
+#menu #sidemenu:hover,
+#menu #sidemenu.toggleON {
+    background: rgba(255,255,255, 0.2);
+}
+#menu #sidemenu #header-logo {
+    visibility: visible;
+    opacity: 1;
+    /* transition: opacity 0.5s 0.2s linear; */
+}
+body.fp-viewing-0 #menu #sidemenu ul {
+    opacity: 0.15;
+    left: 30px;
+    transition: all 0.3s ease-in-out;
+}
+#menu #sidemenu ul {
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+}
+body.fp-viewing-0 #menu #sidemenu:hover ul,
+body.fp-viewing-0 #menu #sidemenu.toggleON ul {
+    opacity: 1;
+    left: 150px;
+}
+/* #menu #sidemenu ul {
+    opacity: 1;
+} */
+#menu #sidemenu ul li a p {
+    color: #000;
+}
+#menu #sidemenu ul li a span span {
+    /* border-radius: 50%; */
+    /* position: absolute; */
+    z-index: 1;
+    background: #000;
+    /* transition: all 0.2s ease-in-out; */
+}
+#menu #sidemenu #ig i,
+#menu #sidemenu #ig p,
+#menu #sidemenu ul li a p {
+    color: #000;
+}
+
+
+/* proyectmenu */
+#menu #proyectmenu {
+    background: rgba(76, 216, 189, 0);
+}
+#menu #proyectmenu:hover {
+    background: rgba(76, 216, 189, 0.05);
+}
+#menu #proyectmenu ul {
+    opacity: 0.7;
+}
+#menu #proyectmenu ul li a {
+    opacity: 1;
+}
+#menu #proyectmenu ul li a p {
+    color: #000;
+}
+#menu #proyectmenu ul li a:hover p {
+    color: #4cd8bd !important;
+}
+#menu #proyectmenu ul li a span span {
+    background: #4cd8bd;
+    border-color: #4cd8bd;
+}
+
+body.fp-viewing-0 #menu #proyectmenu ul li:nth-child(1) a span span,
+body.fp-viewing-1 #menu #proyectmenu ul li:nth-child(2) a span span,
+body.fp-viewing-2 #menu #proyectmenu ul li:nth-child(3) a span span,
+body.fp-viewing-3 #menu #proyectmenu ul li:nth-child(4) a span span,
+body.fp-viewing-4 #menu #proyectmenu ul li:nth-child(5) a span span,
+body.fp-viewing-5 #menu #proyectmenu ul li:nth-child(6) a span span,
+body.fp-viewing-6 #menu #proyectmenu ul li:nth-child(7) a span span,
+body.fp-viewing-7 #menu #proyectmenu ul li:nth-child(8) a span span,
+body.fp-viewing-8 #menu #proyectmenu ul li:nth-child(9) a span span,
+body.fp-viewing-9 #menu #proyectmenu ul li:nth-child(10) a span span,
+body.fp-viewing-10 #menu #proyectmenu ul li:nth-child(11) a span span,
+body.fp-viewing-11 #menu #proyectmenu ul li:nth-child(12) a span span,
+body.fp-viewing-12 #menu #proyectmenu ul li:nth-child(13) a span span {
+    width: 10px;
+    height: 10px; 
+    background: rgba(76, 216, 189, 0);
+    border-width: 2px;
+}
+
+
+#langSwitch .checkLayer {
+    background-color: rgba(76, 216, 189, 0) !important;
+}
+#langSwitch:hover .checkLayer {
+    background-color: rgba(76, 216, 189, 1) !important;
+}
+
+
+body.fp-viewing-15 #menu #proyectmenu,
+body.fp-viewing-16 #menu #proyectmenu,
+body.fp-viewing-17 #menu #proyectmenu,
+body.fp-viewing-15 #langSwitch,
+body.fp-viewing-16 #langSwitch,
+body.fp-viewing-17 #langSwitch {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 0.3s ease-in-out;
+}

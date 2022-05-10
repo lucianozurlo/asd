@@ -1,0 +1,269 @@
+body {
+    background: black;
+}
+#fpProject {
+    z-index: 1;
+}
+
+
+
+#projectVideos,
+#elementsProject {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.bgVideo {
+    top: 50%;
+    right: 50%;
+    width: auto;
+    height: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: revert;
+    background: #000;
+    transform: translate(50%, -50%);
+}
+.elementsCanvas {
+    position: absolute;
+    z-index: 222;
+    top: 50%;
+    right: 50%;
+    width: 177.78vh;
+    height: 56.25vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: revert;
+    /*background: rgba(255, 0, 0, .5);*/
+    transform: translate(50%, -50%);
+}
+
+
+/*
+body.fp-viewing-0 .bgVideo {
+    max-width: 200vw;
+    max-height: 200vh;
+    transition: max-width 1s, max-height 1s,;
+    transition-delay: 0s;
+}
+body.fp-viewing-1 .bgVideo {
+    max-width: 100vw;
+    max-height: 100vh;
+    transition: max-width 1733ms ease-in-out, max-height 1733ms ease-in-out;
+    transition-delay: 1733ms;
+}
+*/
+
+
+
+
+body.fp-viewing-1 .bgVideo {
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: right .6s , transform .6s ;
+    transition-delay: 1.5s;
+}
+body.fp-viewing-0 .bgVideo {
+    right: 0%;
+    transform: translate(0%, -50%);
+    transition: right 1s , transform 1s ;
+    transition-delay: 0s;
+}
+
+
+#fliebenLoopHot,
+#fliebenLoopCold {
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+body.fp-viewing-3 #fliebenLoopHot,
+body.fp-viewing-4 #fliebenLoopCold {
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+#bgProject {
+    position: absolute;
+    margin: 0 auto;
+    width: 100vw;
+    bottom: 20vh;
+    opacity: 1;
+    z-index: 1;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 1.2s ease-in-out;
+    transform: scale(.9);
+}
+body.fp-viewing-0 .loaded #bgProject {
+    opacity: 1;
+    filter: blur(0);
+    z-index: 1;
+    transform: scale(1);
+    transition: all 1.2s 0.5s ease-in-out;
+}
+body.fp-viewing-1 .loaded #bgProject {
+    opacity: 0;
+    filter: blur(50px);
+    transition: all .75s ease-in-out;
+    transform: scale(.85);
+    bottom: 15vh;
+}
+#logoProject {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.2s ease-in-out;
+}
+#logoProject img {
+    height: 20px;
+}
+body.fp-viewing-0 #logoProject {
+    opacity: 0;
+    top: -30px;
+    filter: blur(25px);
+    transition: all 0.5s 0.75s ease-in-out;
+    z-index: 1;
+    transform: scale(1.2);
+}
+#mouse {
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s 1.1s ease-in-out;
+    z-index: 1;
+}
+body.fp-viewing-0 .loaded #mouse {
+    bottom: 60px;
+    opacity: .25;
+    filter: blur(0);
+}
+body.fp-viewing-1 #mouse {
+    transition-delay: 0s;
+}
+#mouse img {
+    width: 28px;
+}
+.fp-section.fp-table:nth-child(7) {
+    background: #fff !important;
+}
+
+
+.elementsCanvas p {
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
+}
+
+.elementsCanvas #elementSection1 {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    width: 30%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 25px 35px;
+    border-radius: 5px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.5s 0.5s ease-in-out;
+}
+.elementsCanvas #elementSection1 p:nth-child(1){
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+body.fp-viewing-1 .elementsCanvas #elementSection1 {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.2s 1s ease-in-out;
+}
+.elementsCanvas #elementSection2  {
+    position: absolute;
+    left: 53%;
+    bottom: 25%;
+    height: 2px;
+    width: 400px;
+    z-index: 22;
+    background-color: rgba(255, 0, 0, 1);
+    padding: 0;
+    border-radius: 4px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.5s 0.5s ease-in-out;
+}
+body.fp-viewing-2 .elementsCanvas #elementSection2 {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.2s 0.7s ease-in-out;
+}
+
+
+body.fp-viewing-7 #menu #sidemenu,
+body.fp-viewing-7 #logoProject,
+body.fp-viewing-8 #menu #sidemenu,
+body.fp-viewing-8 #logoProject {
+        opacity: 0;
+    transition: all 1s .75s ease-in-out;
+}
+body.fp-viewing-6 #fliebenVideos,
+body.fp-viewing-7 #fliebenVideos {
+        opacity: 0;
+}
+#logoEnd {
+    width: 100vw;
+}
+#logoEnd h3 {
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all .4s ease-in-out;
+}
+body.fp-viewing-7 #logoEnd h3,
+body.fp-viewing-8 #logoEnd h3 {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1.5s ease-in-out;
+    transition-delay: .1s ;
+}
+
+#logoEnd img {
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    opacity: 0;
+    filter: blur(25px);
+    transition: all .4s ease-in-out;
+}
+body.fp-viewing-7 #logoEnd img,
+body.fp-viewing-8 #logoEnd img {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1.5s ease-in-out;
+    transition-delay: .35s ;
+}
+.videoGaleria {
+    position: unset;
+    bottom: unset;
+    top: unset;
+    right: unset;
+    filter: blur(0px);
+    opacity: 1;
+    transition: filter 2s ease-in-out, opacity 2s ease-in-out;
+}
+body.fp-viewing-7 .videoGaleria {
+    filter: blur(50px);
+    opacity: 0;
+    transition: filter 2s ease-in-out, opacity .5s ease-in-out;
+}

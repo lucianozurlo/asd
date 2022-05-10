@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Qlic :: Zeta-ID</title>
+    <link rel="shortcut icon" href="img/logos/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/preload.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu-qlic.css" />
+    <link rel="stylesheet" type="text/css" href="css/zeta-id.css" />
+    <link rel="stylesheet" type="text/css" href="css/videos.css" />
+    <link rel="stylesheet" type="text/css" href="css/qlic.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/kursor.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+
+    <!--[if IE]>
+      <script type="text/javascript">
+        var console = { log: function () {} };
+      </script>
+    <![endif]-->
+    <!-- <script type="text/javascript">
+        function scrolled(o) {
+            //visible height + pixel scrolled = total height
+            if (o.offsetHeight + o.scrollTop == o.scrollHeight) {
+                alert("End");
+                console.log();
+            }
+        }
+    </script> -->
+</head>
+
+<body id="qlicProject">
+    <div id="ip-container" class="ip-container">
+        <header class="ip-header">
+            <div class="ip-logo"><img src="img/logos/ZETA_ID_iso_home.svg" /></div>
+            <div class="ip-loader">
+                <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                    <path class="ip-loader-circlebg"
+                        d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
+                    <path id="ip-loader-circle" class="ip-loader-circle"
+                        d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
+                </svg>
+            </div>
+        </header>
+
+        <div class="ip-main">
+
+            <div id="overallContent">
+                <div id="menu">
+                    <div id="sidemenu" onmouseleave="togglePortfolioOff()">
+                        <div id="logo-main">
+                            <a href="#Zeta-id" class="k-hover">
+                                <img id="header-logo" src="img/logos/ZETA_ID_iso.svg" />
+                                <img id="header-logo-white" src="img/logos/ZETA_ID_iso_white.svg" />
+                            </a>
+                        </div>
+
+                        <ul>
+                            <li><a href="#WeDoIndustrialDesign" class="k-hover">
+                                    <p>Home</p><span><span></span></span>
+                                </a></li>
+                            <li><a onclick="togglePortfolio()" class="k-hover">
+                                    <p>Portfolio</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#OurValues" class="k-hover">
+                                    <p>Our Values</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#OurProcess" class="k-hover">
+                                    <p>Our Process</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#OurTeam" class="k-hover">
+                                    <p>Our Team</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#ContactUs" class="k-hover">
+                                    <p>Contact Us</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+
+                        <div id="ig">
+                            <a href="https://instagram.com/zeta__id" target="_blank" class="k-hover">
+                                <p class="k-hover">@zeta.id</p>
+                                <i class="fab fa-instagram k-hover"></i>
+                            </a>
+                        </div>
+
+                        <div id="portfolio">
+                            <a href="eko.html" class="portfolioEKO k-hover" onclick="togglePortfolioOff()">
+                                <img src="img/logos/eko_logo_color.svg">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/eko/eko-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            <a href="sentry.html" class="portfolioSentry k-hover" onclick="togglePortfolioOff()">
+                                <img src="img/logos/sentry_logo_color.svg">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/sentry/sentry-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            <a href="flieben.html" class="portfolioFlieben k-hover" onclick="togglePortfolioOff()">
+                                <img src="img/logos/flieben_logo_color.svg">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/flieben/flieben-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            <a href="magma.html" class="portfolioMagma k-hover" onclick="togglePortfolioOff()">
+                                <img src="img/logos/magma_logo_color.svg">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/magma/magma-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            <a href="#" class="portfolioQlic active" onclick="togglePortfolioOff()">
+                                <img src="img/logos/qlic_logo_color.svg" style="width: 70%;">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/qlic/qlic-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="proyectmenu" onmouseleave="togglePortfolioOff()">
+                        <ul>
+                            <li><a href="#0" class="k-hover">
+                                    <p>Home</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#1" class="k-hover">
+                                    <p>Sección 1</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#2" class="k-hover">
+                                    <p>Sección 2</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#3" class="k-hover">
+                                    <p>Sección 3</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#4" class="k-hover">
+                                    <p>Sección 4</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#5" class="k-hover">
+                                    <p>Sección 5</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="logoProject">
+                    <img src="img/logos/qlic_logo_color.svg" />
+                </div>
+
+                <div id="introProject">
+                    <img src="img/logos/qlic_logo_color.svg" style="width: 20vw;" />
+                    <p>Camping lighter</p>
+                </div>
+
+                <div id="mouse">
+                    <img class="dark" src="img/scroll.gif" />
+                    <img class="light" src="img/scroll-white.gif" />
+                </div>
+
+                <div id="langSwitch" class="switch r k-hover">
+                    <input type="checkbox" class="check">
+                    <div class="knobs"></div>
+                    <div class="checkLayer"></div>
+                </div>
+
+                <div id="elementsProject">
+                    <div class="elementsCanvas">
+                        <div id="elementsSection1">
+                            <div class="element0">
+                                <h3>Concept</h3>
+                                <p>Puu Õõ, a Hawaiian volcano, inspired the concept. The concept conveys the texture and
+                                    the flow of the lava rivers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fpProject">
+                <div id="section0" class="section">
+                    <div class="fp-bg">
+                        <div class="layer"></div>
+                        <video id="qlic-video" loop="" muted="" playsinline="" data-autoplay="" style="
+                        object-fit: cover; width: 100%; height: 100%;">
+                            <source src="projects/qlic/qlic-home.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div id="section1" class="section">
+                    <div class="fp-bg">
+                        <video id="qlic-video" loop="" muted="" playsinline="" data-autoplay="">
+                            <source src="projects/qlic/qlic-01.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div id="section2" class="section">
+                    <div class="fp-bg">
+                        <img src="projects/qlic/qlic-02.jpg">
+                    </div>
+                </div>
+                <div id="section3" class="section">
+                    <div class="fp-bg">
+                        <video id="qlic-video" loop="" muted="" playsinline="" data-autoplay="" style="
+                        object-fit: cover; width: 100%; height: 100%;">
+                            <source src="projects/qlic/qlic-03.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div id="section4" class="section">
+                    <div class="fp-bg">
+                        <img src="projects/qlic/qlic-04-zoom.jpg">
+                    </div>
+                </div>
+                <div id="section5" class="section">
+                    <div class="fp-bg">
+                        <img src="projects/qlic/qlic-05.jpg">
+                    </div>
+                </div>
+                <div id="section6" class="section">
+                    <div class="fp-bg">
+                        <video loop muted="" playsinline="" data-autoplay="" autoplay loop>
+                            <source src="projects/qlic/qlic-06.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div id="section7" class="section">
+                    <div class="fp-bg">
+                        <video loop muted="" playsinline="" data-autoplay="" autoplay loop>
+                            <source src="projects/qlic/qlic-07-360.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div id="section6" class="section">
+                    <div class="fp-bg" style="height: 0px;">
+                        <div class="logoEndCanvas" style="
+                            height: 100vh;
+                            position: absolute;
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            ">
+                            <div id="logoEnd">
+                                <h3>Designed by</h3>
+                                <img src="img/logos/ZETA_ID_logo_white.svg"
+                                    style="position: relative; height: 150px; margin: 0 auto" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="section7" class="section fp-auto-height">
+                    <div style="height: 350px">
+                        <div class="next">
+                            <video id="ekoNext" muted="" playsinline="" data-autoplay="">
+                                <source src="projects/eko/ekoNext.mp4" type="video/mp4" />
+                            </video>
+                            <img src="img/logos/eko_logo_color.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div id="section8" class="section fp-last"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/fp.js"></script>
+    <script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.js"></script>
+    <script type="text/javascript" src="js/fpQlic.js"></script>
+
+    <script type="text/javascript">
+        let promise = document.querySelector("video").play();
+
+        if (promise !== undefined) {
+            promise
+                .then((_) => {
+                    // Autoplay started!
+                })
+                .catch((error) => {
+                    // Autoplay was prevented.
+                    // Show a "Play" button so that user can start playback.
+                });
+        }
+    </script>
+
+    <script src="js/classie.js"></script>
+    <script src="js/pathLoader.js"></script>
+    <script src="js/main-home.js"></script>
+    <script src="js/kursor.js"></script>
+    <script>
+        var kursorQlic = new kursor({
+            //  el: '.kursorQlic',
+            type: 1,
+            color: "#fc3000",
+            removeDefaultCursor: true,
+        });
+    </script>
+
+    <script>
+        // this is important for IEs
+        let polyfilter_scriptpath = "/js/";
+    </script>
+
+    <script type="text/javascript">
+        const togglePortfolio = () => {
+            document.querySelector("#sidemenu").classList.add("toggleON");
+            document.querySelector("#logoProject").classList.add("toggleOFF");
+            document.querySelector("#fpProject").classList.add("toggleOFF");
+            document.querySelector("#introProject img").classList.add("toggleOFF");
+            document.querySelector("#introProject p").classList.add("toggleOFF");
+            document.querySelector("#mouse").classList.add("toggleOFF");
+            document.querySelector("#proyectmenu").classList.add("toggleOFF");
+            document.querySelector("#portfolio").classList.add("toggleVideos");
+
+            document.querySelector("#section0 video").pause();
+            document.querySelector("#section1 video").pause();
+            document.querySelector("#section2 video").pause();
+            document.querySelector("#section3 video").pause();
+            document.querySelector("#section4 video").pause();
+            document.querySelector("#section5 video").pause();
+        };
+        const togglePortfolioOff = () => {
+            document.querySelector("#sidemenu").classList.remove("toggleON");
+            document.querySelector("#logoProject").classList.remove("toggleOFF");
+            document.querySelector("#fpProject").classList.remove("toggleOFF");
+            document.querySelector("#introProject img").classList.remove("toggleOFF");
+            document.querySelector("#introProject p").classList.remove("toggleOFF");
+            document.querySelector("#mouse").classList.remove("toggleOFF");
+            document.querySelector("#proyectmenu").classList.remove("toggleOFF");
+            document.querySelector("#portfolio").classList.remove("toggleVideos");
+
+            document.querySelector("#section0 video").play();
+            document.querySelector("#section1 video").play();
+            document.querySelector("#section2 video").play();
+            document.querySelector("#section3 video").play();
+            document.querySelector("#section4 video").play();
+            document.querySelector("#section5 video").play();
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,404 @@
+/* Secciones
+ * --------------------------------------- */
+.fp-section {
+    position: fixed;
+    text-align: center;
+}
+
+.section.fp-section {
+    text-align: center;
+    border-bottom: 1px solid transparent;
+}
+
+#section4.fp-section,
+#section9.fp-section {
+    border-bottom: 1px solid #000;
+}
+
+.section .home-section {
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 2.3s ease-in-out;
+}
+
+.section.active .home-section {
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+.layer .home-section p {
+    padding: 2vw 0;
+    font-weight: 300;
+    color: #fff;
+}
+
+[id*="section"] .fp-tableCell>div>.intro {
+    opacity: 0;
+    transition: all 0.85s ease-in-out;
+    filter: blur(50px);
+}
+
+[id*="section"].active .fp-tableCell>div>.intro {
+    opacity: 1;
+    transition: all 0.85s ease-in-out;
+    filter: blur(0);
+}
+
+#section2,
+#section4,
+#section5 {
+    background: #000 !important;
+}
+
+#section2 #eko-home img,
+#section3 #sentry-home img,
+#section4 #flieben-home img,
+#section5 #magma-home img {
+    opacity: 0;
+    height: 18vh;
+    max-width: 100vw;
+    transition: all 2s ease-in-out;
+}
+
+#section2.active #eko-home img,
+#section3.active #sentry-home img,
+#section4.active #flieben-home img,
+#section5.active #magma-home img {
+    opacity: 1;
+    height: 10vh;
+    max-width: 50vw;
+    transition: all 1s ease-in-out;
+}
+
+.intro {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro2 {
+    max-width: 100vw;
+    display: table-cell;
+    vertical-align: top;
+    height: 55.4vh;
+}
+
+.fp-bg {
+    display: table;
+    background-size: cover;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+}
+
+/* Botones home
+ * --------------------------------------- */
+.layer a {
+    bottom: 7vh;
+    position: absolute;
+    /* cursor: pointer; */
+}
+
+.layer a .home-section .button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-table;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    border-radius: 50px;
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 0.2s ease-in;
+}
+
+.layer a:hover .home-section .button {
+    color: white !important;
+    box-shadow: 0 0 30px 0 rgba(230, 230, 230, 0.5);
+    background-color: #e6e6e6;
+    transition: all 0.2s ease-out;
+}
+
+.layer a:hover .home-section .button:before {
+    animation: shine 0.5s 0s linear;
+}
+
+.layer a .home-section .button:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.layer a .home-section .button:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 15px 3px #fff;
+    transform: skewX(-20deg);
+}
+
+.layer a .home-section .button i {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 22px;
+}
+
+.layer a#eko-home .home-section .button {
+    color: #9a71ff;
+    border: 1px solid #9a71ff;
+}
+
+.layer a#eko-home:hover .home-section .button {
+    box-shadow: 0 0 30px 0 rgba(154, 113, 255, 0.5);
+    background-color: #9a71ff;
+}
+
+.layer a#sentry-home .home-section .button {
+    color: #4cd8bd;
+    border: 1px solid #4cd8bd;
+}
+
+.layer a#sentry-home:hover .home-section .button {
+    box-shadow: 0 0 30px 0 rgba(76, 216, 189, 0.5);
+    background-color: #4cd8bd;
+}
+
+.layer a#flieben-home .home-section .button {
+    color: #5ae0ff;
+    border: 1px solid #5ae0ff;
+}
+
+.layer a#flieben-home:hover .home-section .button {
+    box-shadow: 0 0 30px 0 rgba(90, 224, 255, 0.5);
+    background-color: #5ae0ff;
+}
+
+.layer a#magma-home .home-section .button {
+    color: #ffab8d;
+    border: 1px solid #ffab8d;
+}
+
+.layer a#magma-home:hover .home-section .button {
+    box-shadow: 0 0 30px 0 rgba(255, 171, 141, 0.5);
+    background-color: #ffab8d;
+}
+
+@keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+/* Section 1
+ * --------------------------------------- */
+#section0 #logo {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    min-width: 200px;
+    transform: translate(0px, 20vh);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+#section0.active #logo {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: opacity 0.25s ease-out;
+    transition: filter 0.5s ease-out;
+}
+
+#section0 #logo img {
+    animation: logo-in ease-in-out 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo-in {
+    0% {
+        filter: blur(50px);
+        max-width: 5vw;
+    }
+
+    100% {
+        filter: blur(0px);
+        max-width: 15vw;
+    }
+}
+
+#section0 #mouse {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.2s ease-in-out;
+}
+
+#section0.active #mouse {
+    bottom: 60px;
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s ease-in-out;
+}
+
+#section0 #mouse a {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+#section0 #mouse a:hover {
+    opacity: 0.4;
+    transition: all 0.4s ease-in-out;
+}
+
+#section0 #mouse a img {
+    width: 28px;
+}
+
+#section0.fp-section {
+    border-bottom: 1px solid #fff;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section1 #wedo {
+    margin: 0 10vw;
+    font-weight: 200;
+    font-size: 20vh;
+    text-align: left;
+    height: 55.4vh;
+}
+
+#section1 #wedo span p {
+    margin: -5vw 0;
+    width: 100vw;
+    font-size: 20vh;
+    letter-spacing: -3px;
+    font-weight: 900;
+}
+
+#section1 #wedo span p:nth-child(2) {
+    color: #c3af80;
+    margin-top: -10vh;
+}
+
+#section1 #wedo span p:nth-child(3) {
+    margin-top: -12.3vh;
+}
+
+#section1 #wedo2 {
+    color: #c3af80;
+}
+
+#section1.active #wedo2 {
+    opacity: 1;
+    margin-top: -17vh;
+    animation: reload ease-in-out 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+}
+
+@keyframes reload {
+    0% {
+        opacity: 0;
+        margin-top: -17vh;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0vh;
+        width: 100%;
+    }
+}
+
+#section1.active #wedo2 {
+    opacity: 1;
+    transition: all 2.4s ease-in-out;
+    animation: typewriter 1s steps(44) 0.6s 1 normal both;
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #section1 #wedo2 {
+        font-size: 13vw;
+    }
+}
+
+body.fp-viewing-EKO #section1 #logo {
+    transform: translateY(10vh);
+    transition: all 0.8s ease-in-out;
+}
+
+body.fp-viewing-EKO #section1 #wedo span p {
+    margin: 0vw 0;
+    transition: margin 0.8s ease-in-out;
+}
+
+body.fp-viewing-EKO #section1 #wedo span p:nth-child(2) {
+    transform: translateY(20vh);
+    transition: all 0.8s ease-in-out;
+}
+
+body.fp-viewing-EKO #section1 #wedo span p:nth-child(3) {
+    transform: translateY(35vh);
+    transition: all 0.8s ease-in-out;
+}
+
+#section1.fp-section {
+    border-top: 1px solid #fff;
+}
+
+
+/* Section 4
+ * --------------------------------------- */
+#section3 .layer,
+#portfolio2 .layer {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+#section3 .home-section p,
+#portfolio2 .home-section p {
+    padding: 1vw 0 2vw;
+    color: #757575;
+}
+
+#section3 #colors,
+#portfolio2 #colors {
+    left: 60px;
+    bottom: 0;
+}
+
+#section4.fp-section {
+    border-bottom: 1px solid #000;
+}

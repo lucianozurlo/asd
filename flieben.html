@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>fließen :: Zeta-ID</title>
+    <link rel="shortcut icon" href="img/logos/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/preload.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu-flieben.css" />
+    <link rel="stylesheet" type="text/css" href="css/zeta-id.css" />
+    <link rel="stylesheet" type="text/css" href="css/videos.css" />
+    <link rel="stylesheet" type="text/css" href="css/flieben.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/kursor.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+
+    <!--[if IE]>
+      <script type="text/javascript">
+        var console = { log: function () {} };
+      </script>
+    <![endif]-->
+
+    <!--     <script type="text/javascript">
+        function scrolled(o) {
+            //visible height + pixel scrolled = total height
+            if (o.offsetHeight + o.scrollTop == o.scrollHeight) {
+                alert("End");
+                console.log();
+            }
+        }
+    </script> -->
+</head>
+
+<body id="fliebenProject">
+    <div id="ip-container" class="ip-container">
+        <header class="ip-header">
+            <div class="ip-logo"><img src="img/logos/ZETA_ID_iso_home.svg" /></div>
+            <div class="ip-loader">
+                <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                    <path class="ip-loader-circlebg"
+                        d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
+                    <path id="ip-loader-circle" class="ip-loader-circle"
+                        d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
+                </svg>
+            </div>
+        </header>
+
+        <div class="ip-main">
+
+            <div id="overallContent">
+                <div id="menu">
+                    <div id="sidemenu" onmouseleave="togglePortfolioOff()">
+                        <div id="logo-main">
+                            <a href="#Zeta-id" class="k-hover">
+                                <img id="header-logo" src="img/logos/ZETA_ID_iso.svg" />
+                                <img id="header-logo-white" src="img/logos/ZETA_ID_iso_white.svg" />
+                            </a>
+                        </div>
+
+                        <ul>
+                            <li><a href="#WeDoIndustrialDesign" class="k-hover">
+                                    <p>Home</p><span><span></span></span>
+                                </a></li>
+                            <li><a onclick="togglePortfolio()" class="k-hover">
+                                    <p>Portfolio</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#OurValues" class="k-hover">
+                                    <p>Our Values</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#OurProcess" class="k-hover">
+                                    <p>Our Process</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#OurTeam" class="k-hover">
+                                    <p>Our Team</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#ContactUs" class="k-hover">
+                                    <p>Contact Us</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+
+                        <div id="ig">
+                            <a href="https://instagram.com/zeta__id" target="_blank" class="k-hover">
+                                <p class="k-hover">@zeta.id</p>
+                                <i class="fab fa-instagram k-hover"></i>
+                            </a>
+                        </div>
+
+                        <div id="portfolio">
+                            <a href="eko.html" class="portfolioEKO k-hover" onclick="togglePortfolioOff()">
+                                <img src="img/logos/eko_logo_color.svg">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/eko/eko-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            <a href="sentry.html" class="portfolioSentry k-hover" onclick="togglePortfolioOff()">
+                                <img src="img/logos/sentry_logo_color.svg">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/sentry/sentry-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            <a href="#" class="portfolioFlieben active" onclick="togglePortfolioOff()">
+                                <img src="img/logos/flieben_logo_color.svg">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/flieben/flieben-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            <a href="magma.html" class="portfolioMagma k-hover" onclick="togglePortfolioOff()">
+                                <img src="img/logos/magma_logo_color.svg">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/magma/magma-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                            <a href="qlic.html" class="portfolioQlic k-hover" onclick="togglePortfolioOff()">
+                                <img src="img/logos/qlic_logo_color.svg" style="width: 70%;">
+                                <video loop="" muted="" playsinline="" data-autoplay="" autoplay>
+                                    <source src="projects/qlic/qlic-home.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="proyectmenu" onmouseleave="togglePortfolioOff()">
+                        <ul>
+                            <li><a href="#0" class="k-hover">
+                                    <p>Home</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#1" class="k-hover">
+                                    <p>Sección 1</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#2" class="k-hover">
+                                    <p>Sección 2</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#3" class="k-hover">
+                                    <p>Sección 3</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#4" class="k-hover">
+                                    <p>Sección 4</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#5" class="k-hover">
+                                    <p>Sección 5</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#6" class="k-hover">
+                                    <p>Sección 6</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#7" class="k-hover">
+                                    <p>Sección 7</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#8" class="k-hover">
+                                    <p>Sección 8</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#9" class="k-hover">
+                                    <p>Sección 9</p><span><span></span></span>
+                                </a></li>
+                            <li><a href="#10" class="k-hover">
+                                    <p>Sección 10</p><span><span></span></span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="logoProject">
+                    <img src="img/logos/flieben_logo_color.svg" />
+                </div>
+
+                <div id="projectVideos">
+                    <video id="fliebenRev" muted="">
+                        <source src="projects/flieben/fliebenRev.mp4" type="video/mp4" />
+                    </video>
+                    <video id="fliebenPlay" muted="">
+                        <source src="projects/flieben/fliebenPlay.mp4" type="video/mp4" />
+                    </video>
+                    <video id="fliebenLoopCold" loop muted="">
+                        <source src="projects/flieben/fliebenLoopCold.mp4" type="video/mp4" />
+                    </video>
+                    <video id="fliebenLoopColdRev" loop muted="">
+                        <source src="projects/flieben/fliebenLoopColdRev.mp4" type="video/mp4" />
+                    </video>
+                    <video id="fliebenLoopHot" loop muted="">
+                        <source src="projects/flieben/fliebenLoopHot.mp4" type="video/mp4" />
+                    </video>
+                    <video id="fliebenLoopHotRev" loop muted="">
+                        <source src="projects/flieben/fliebenLoopHotRev.mp4" type="video/mp4" />
+                    </video>
+                </div>
+
+                <div id="introProject">
+                    <img src="img/logos/flieben_logo_color.svg" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />sed
+                        do eiusmod ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div id="mouse">
+                    <img src="img/scroll-white.gif" />
+                </div>
+
+                <div id="langSwitch" class="switch r dark k-hover">
+                    <input type="checkbox" class="check">
+                    <div class="knobs"></div>
+                    <div class="checkLayer"></div>
+                </div>
+
+                <div id="elementsProject">
+                    <div class="elementsCanvas">
+                        <div id="elementsSection1">
+                            <div class="element0">
+                                <h3>Climatizador de ambientes transportable</h3>
+                                <p>Compacto, liviano y portatil para usarlo sin necesidad de conexion a una red
+                                    electrica.</p>
+                            </div>
+                        </div>
+
+                        <div id="elementsSection2">
+                            <div class="element0">
+                                <h3>Compact Dual System</h3>
+                                <p>Doble sistema de refrigeración compacto. Mayor rendimiento energético.</p>
+                            </div>
+                            <div class="element1 tooltip">
+                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="element2 tooltip">
+                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="element3 tooltip">
+                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="element4 tooltip">
+                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="element5 tooltip">
+                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="element6 tooltip">
+                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="element7 tooltip">
+                                <div class="button-plus k-hover"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fpProject">
+                <div class="section" id="section0">
+                    <div class="fp-bg"></div>
+                </div>
+                <div class="section" id="section1">
+                    <div class="fp-bg"></div>
+                </div>
+                <div class="section" id="section2">
+                    <div class="fp-bg"></div>
+                </div>
+                <div class="section" id="section3">
+                    <div class="fp-bg"></div>
+                </div>
+                <div class="section" id="section4">
+                    <div class="fp-bg"></div>
+                </div>
+                <div class="section" id="section5">
+                    <div class="fp-bg">
+                        <video muted="" playsinline="" data-autoplay="">
+                            <source src="projects/flieben/fliebenEnd.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="section" id="section6">
+                    <div class="fp-bg bg-black">
+                        <video loop muted="" playsinline="" data-autoplay="">
+                            <source src="projects/flieben/flieben1.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="section" id="section7">
+                    <div class="fp-bg bg-black">
+                        <video loop muted="" playsinline="" data-autoplay="">
+                            <source src="projects/flieben/flieben2.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="section" id="section8">
+                    <div class="fp-bg bg-black">
+                        <video loop muted="" playsinline="" data-autoplay="">
+                            <source src="projects/flieben/flieben360.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="section" id="section9">
+                    <div class="fp-bg bg-black" style="height: 0px; background: #000">
+                        <div class="logoEndCanvas" style="
+                            height: 100vh;
+                            position: absolute;
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            ">
+                            <div id="logoEnd">
+                                <h3>Designed by</h3>
+                                <img src="img/logos/ZETA_ID_logo_white.svg"
+                                    style="position: relative; height: 150px; margin: 0 auto" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="section10" class="section fp-auto-height bg-black">
+                    <div style="height: 350px">
+                        <div class="next">
+                            <video id="magmaNext" muted="" playsinline="" data-autoplay="">
+                                <source src="projects/magma/magmaNext.mp4" type="video/mp4" />
+                            </video>
+                            <img src="img/logos/magma_logo_color.svg" />
+                        </div>
+                    </div>
+                </div>
+                <di id="section11" class="section bg-black fp-last">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="js/fp.js"></script>
+    <script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.js"></script>
+    <script type="text/javascript" src="js/FliebenFn.js"></script>
+    <script type="text/javascript" src="js/fpFlieben.js"></script>
+
+    <script type="text/javascript">
+        let promise = document.querySelector("video").play();
+
+        if (promise !== undefined) {
+            promise
+                .then((_) => {
+                    // Autoplay started!
+                })
+                .catch((error) => {
+                    // Autoplay was prevented.
+                    // Show a "Play" button so that user can start playback.
+                });
+        }
+    </script>
+
+    <script src="js/classie.js"></script>
+    <script src="js/pathLoader.js"></script>
+    <script src="js/main-home.js"></script>
+    <script src="js/kursor.js"></script>
+    <script>
+        //   var kursor = new kursor({
+        //     type: 1,
+        //     color: "#c3af80",
+        //     removeDefaultCursor: true,
+        //   });
+        // var kursorEKO = new kursor({
+        //   el: '.kursorEKO',
+        //   type: 1,
+        //   color: "#9a71ff",
+        //   removeDefaultCursor: true,
+        // });
+        // var kursorSentry = new kursor({
+        //   el: '.kursorSentry',
+        //   type: 1,
+        //   color: "#4cd8bd",
+        //   removeDefaultCursor: true,
+        // });
+        var kursorFlieben = new kursor({
+            // el: '.kursorFlieben',
+            type: 1,
+            color: "#5ae0ff",
+            removeDefaultCursor: true,
+        });
+      // var kursorMagma = new kursor({
+      //   el: '.kursorMagma',
+      //   type: 1,
+      //   color: "#ffab8d",
+      //   removeDefaultCursor: true,
+      // });
+    </script>
+
+    <script>
+        // this is important for IEs
+        let polyfilter_scriptpath = "/js/";
+    </script>
+
+    <script type="text/javascript">
+        const togglePortfolio = () => {
+            document.querySelector("#sidemenu").classList.add("toggleON");
+            document.querySelector("#logoProject").classList.add("toggleOFF");
+            document.querySelector("#fpProject").classList.add("toggleOFF");
+            document.querySelector("#elementsProject .elementsCanvas").classList.add("toggleOFF");
+            document.querySelector("#projectVideos").classList.add("toggleOFF");
+            document.querySelector("#introProject img").classList.add("toggleOFF");
+            document.querySelector("#introProject p").classList.add("toggleOFF");
+            document.querySelector("#mouse").classList.add("toggleOFF");
+            document.querySelector("#proyectmenu").classList.add("toggleOFF");
+            document.querySelector("#portfolio").classList.add("toggleVideos");
+            document.querySelector("#section6 video").pause();
+            document.querySelector("#section7 video").pause();
+            document.querySelector("#section8 video").pause();
+            document.querySelector("#fliebenLoopHot").pause();
+            document.querySelector("#fliebenLoopCold").pause();
+        };
+        const togglePortfolioOff = () => {
+            document.querySelector("#sidemenu").classList.remove("toggleON");
+            document.querySelector("#logoProject").classList.remove("toggleOFF");
+            document.querySelector("#fpProject").classList.remove("toggleOFF");
+            document.querySelector("#elementsProject .elementsCanvas").classList.remove("toggleOFF");
+            document.querySelector("#projectVideos").classList.remove("toggleOFF");
+            document.querySelector("#introProject img").classList.remove("toggleOFF");
+            document.querySelector("#introProject p").classList.remove("toggleOFF");
+            document.querySelector("#mouse").classList.remove("toggleOFF");
+            document.querySelector("#proyectmenu").classList.remove("toggleOFF");
+            document.querySelector("#portfolio").classList.remove("toggleVideos");
+            document.querySelector("#section6 video").play();
+            document.querySelector("#section7 video").play();
+            document.querySelector("#section8 video").play();
+            document.querySelector("#fliebenLoopHot").play();
+            document.querySelector("#fliebenLoopCold").play();
+        };
+    </script>
+</body>
+
+</html>
